@@ -1,0 +1,9 @@
+{
+	"name": "uha-adf-d",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b12cdc58-9cc6-4597-9906-1299e83f1f26",
+		"tenantId": "18c3b4f7-e526-4f98-939a-19118361cac0"
+	}
+}
