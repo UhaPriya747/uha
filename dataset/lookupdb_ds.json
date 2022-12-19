@@ -1,0 +1,50 @@
+{
+	"name": "lookupdb_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "lookup",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "dataload_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "load_flag",
+				"type": "char"
+			},
+			{
+				"name": "src_type",
+				"type": "varchar"
+			},
+			{
+				"name": "src_folder_schema",
+				"type": "varchar"
+			},
+			{
+				"name": "src_file_table",
+				"type": "varchar"
+			},
+			{
+				"name": "sql_sp_sheet",
+				"type": "varchar"
+			},
+			{
+				"name": "tgt_folder_schema",
+				"type": "varchar"
+			},
+			{
+				"name": "tgt_file_name",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "mydata_lode"
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"name": "copydatadb_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "copydatadb_ls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"targetfile": {
+				"type": "string"
+			},
+			"targetschema": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().targetschema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().targetfile",
+				"type": "Expression"
+			}
+		}
+	}
+}
