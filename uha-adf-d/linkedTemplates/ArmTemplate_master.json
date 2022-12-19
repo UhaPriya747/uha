@@ -7,17 +7,21 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "uha-adf-d"
 		},
-		"lscsv_connectionString": {
+		"copydata_ls_accountKey": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lscsv'"
+			"metadata": "Secure string for 'accountKey' of 'copydata_ls'"
 		},
-		"lsdb_connectionString": {
+		"copydatadb_ls_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lsdb'"
+			"metadata": "Secure string for 'connectionString' of 'copydatadb_ls'"
 		},
-		"lsparq_connectionString": {
+		"lookup_connectionString": {
 			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'lsparq'"
+			"metadata": "Secure string for 'connectionString' of 'lookup'"
+		},
+		"copydata_ls_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://stuhad.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -46,14 +50,17 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"lscsv_connectionString": {
-						"value": "[parameters('lscsv_connectionString')]"
+					"copydata_ls_accountKey": {
+						"value": "[parameters('copydata_ls_accountKey')]"
 					},
-					"lsdb_connectionString": {
-						"value": "[parameters('lsdb_connectionString')]"
+					"copydatadb_ls_connectionString": {
+						"value": "[parameters('copydatadb_ls_connectionString')]"
 					},
-					"lsparq_connectionString": {
-						"value": "[parameters('lsparq_connectionString')]"
+					"lookup_connectionString": {
+						"value": "[parameters('lookup_connectionString')]"
+					},
+					"copydata_ls_properties_typeProperties_url": {
+						"value": "[parameters('copydata_ls_properties_typeProperties_url')]"
 					}
 				}
 			},

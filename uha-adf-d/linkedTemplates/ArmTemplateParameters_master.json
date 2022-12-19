@@ -5,14 +5,17 @@
 		"factoryName": {
 			"value": "uha-adf-d"
 		},
-		"lscsv_connectionString": {
+		"copydata_ls_accountKey": {
 			"value": ""
 		},
-		"lsdb_connectionString": {
+		"copydatadb_ls_connectionString": {
 			"value": ""
 		},
-		"lsparq_connectionString": {
+		"lookup_connectionString": {
 			"value": ""
+		},
+		"copydata_ls_properties_typeProperties_url": {
+			"value": "https://stuhad.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
